@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curious Corner</title>
+  <style>
+    * { scroll-behavior: smooth; }
+    body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #fafafa; color: #333; }
+    nav {
+      position: fixed; top: 0; width: 100%; background: rgba(24, 40, 72, 0.95);
+      display: flex; justify-content: center; gap: 2rem; padding: 1rem 0; z-index: 1000;
+      backdrop-filter: blur(6px);
+    }
+    nav a { color: #fff; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+    nav a:hover { color: #4b6cb7; }
+
+    header { background-image: linear-gradient(315deg, #4b6cb7 0%, #182848 74%); color: white; text-align: center; padding: 6rem 1rem 3rem; }
+    header h1 { margin: 0; font-size: 2.8rem; }
+    header p { font-size: 1.2rem; margin-top: 0.5rem; }
+
+    main { max-width: 1000px; margin: 2rem auto; padding: 1rem; }
+    section { margin-bottom: 3rem; opacity: 0; transform: translateY(40px); transition: all 0.8s ease-out; }
+    section.visible { opacity: 1; transform: translateY(0); }
+
+    h2 { color: #182848; border-left: 5px solid #4b6cb7; padding-left: 10px; margin-bottom: 1rem; }
+
+    .hobby-card, .blog-post { background: white; border-radius: 10px; padding: 1rem 1.5rem; margin-bottom: 1rem; box-shadow: 0 3px 6px rgba(0,0,0,0.1); }
+    .hobby-card h3, .blog-post h3 { margin-top: 0; }
+    .blog-post .date { font-size: 0.9em; color: gray; margin-bottom: 1em; }
+    .blog-post a { color: #0077cc; text-decoration: none; font-weight: 600; }
+
+    .experts { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .expert-card { background: white; border-radius: 10px; padding: 1rem; box-shadow: 0 3px 6px rgba(0,0,0,0.1); text-align: center; }
+    .expert-card img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 10px; }
+
+    #contact { background: #4b6cb7; color: white; border-radius: 10px; padding: 2rem; text-align: center; }
+
+    footer { background-color: #182848; color: #ccc; text-align: center; padding: 1rem; font-size: 0.9rem; }
+
+    @media (max-width: 600px) { nav { flex-wrap: wrap; gap: 1rem; } }
+  </style>
+</head>
+<body>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+  <nav>
+    <a href="#intro">Home</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#experts">Experts</a>
+    <a href="#peer-eval">Peer Eval</a>
+    <a href="#articles">Articles</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Curious Corner</h1>
+    <p>Exploring hobbies that grow into future careers</p>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>Welcome to Curious Corner!</h2>
+      <p>Here, we uncover how simple hobbies can inspire future professions. Whether you're into art, coding, gardening, or gaming — your passion could be your career path!</p>
+    </section>
+
+    <section id="hobbies">
+      <h2>Featured Hobbies</h2>
+      <div class="hobby-card">
+        <h3>🎨 Painting & Design</h3>
+        <p>Discover how creative expression can lead to professions in graphic design, animation, and fine arts.</p>
+      </div>
+      <div class="hobby-card">
+        <h3>💻 Coding & Gaming</h3>
+        <p>Learn how problem-solving and digital play open doors to IT, software development, and game design.</p>
+      </div>
+      <div class="hobby-card">
+        <h3>🌱 Gardening & Sustainability</h3>
+        <p>Find out how green hobbies inspire careers in environmental science, botany, and sustainable agriculture.</p>
+      </div>
+    </section>
+
+    <section id="experts">
+      <h2>Career Experts’ Corner</h2>
+      <div class="experts">
+        <div class="expert-card">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Expert 1">
+          <h3>Dr. Lea Mendoza</h3>
+          <p>Career Coach • Creative Industries</p>
+        </div>
+        <div class="expert-card">
+          <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Expert 2">
+          <h3>Engr. Carlo Tan</h3>
+          <p>STEM Career Consultant</p>
+        </div>
+        <div class="expert-card">
+          <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Expert 3">
+          <h3>Prof. Anne Yu</h3>
+          <p>Educational Path Advisor</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="peer-eval">
+      <h2>Peer Evaluations</h2>
+      <p>Join discussions and share insights about hobbies that shaped your academic and career choices. Curious Corner connects enthusiasts and experts to inspire one another.</p>
+    </section>
+
+    <section id="articles">
+      <h2>Articles</h2>
+      <div class="blog-post">
+        <h3>How Drawing Led Me to a Design Career</h3>
+        <p class="date">October 28, 2025</p>
+        <p>Many artists start with simple sketches, but for some, those doodles evolve into powerful design skills that open doors in architecture, animation, and marketing.</p>
+        <a href="drawing-career.html">Read more →</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Got a question, story, or career insight? We’d love to hear from you!</p>
+      <p><strong>Email:</strong> curiouscorner@email.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Curious Corner | Crafted with curiosity and passion.</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const revealOnScroll = () => {
+      const trigger = window.innerHeight * 0.8;
+      sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if (top < trigger) sec.classList.add("visible");
+      });
+    };
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+  </script>
+</body>
+</html>
