@@ -4,37 +4,122 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Articles | Curious Corner</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ffd166;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .article {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .article:hover {
+      transform: translateY(-5px);
+    }
+
+    .article h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .article p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>Curious Corner</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="articles.html">Articles</a>
-      <a href="hobbies.html">Hobbies</a>
-      <a href="experts.html">Experts</a>
-      <a href="about.html">About</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="experts.html">Experts</a></li>
+        <li><a href="peer-eval.html">Peer Eval</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
-    <h2>Articles</h2>
-    <p>Read inspiring stories about how hobbies evolve into careers.</p>
+  <div class="container">
+    <div class="article">
+      <h2>The Beauty of Everyday Curiosity</h2>
+      <p>Curiosity drives discovery, creativity, and growth. Whether it’s exploring a new hobby or diving into a random Wikipedia article, curiosity sparks joy and learning in ways we often overlook.</p>
+      <a href="#" style="color:#0066cc; text-decoration:none;">Read full article →</a>
+    </div>
 
-    <section>
-      <article>
-        <h3>From Sketchbook to Studio: A Teen Artist’s Journey</h3>
-        <p>How one student turned a hobby in drawing into a career in design.</p>
-        <a href="#">Read more</a>
-      </article>
+    <div class="article">
+      <h2>How to Stay Motivated as a Learner</h2>
+      <p>Learning is a lifelong process — but staying motivated can be tough. Here are simple, practical ways to reignite your curiosity and stay consistent in your growth journey.</p>
+      <a href="#" style="color:#0066cc; text-decoration:none;">Read full article →</a>
+    </div>
 
-      <article>
-        <h3>The Gamer Who Became a Developer</h3>
-        <p>Discover how gaming passion led to a career in tech.</p>
-        <a href="#">Read more</a>
-      </article>
-    </section>
-  </main>
+    <div class="article">
+      <h2>Tech Meets Art: The Creative Fusion</h2>
+      <p>When technology and creativity blend, new worlds of innovation open up — from digital art to generative AI. Discover how you can harness both logic and imagination.</p>
+      <a href="#" style="color:#0066cc; text-decoration:none;">Read full article →</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Curious Corner. All rights reserved.
+  </footer>
+
 </body>
 </html>
+
+   
+    
