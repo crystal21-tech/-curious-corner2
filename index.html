@@ -40,9 +40,22 @@
 
     @media (max-width: 600px) { nav { flex-wrap: wrap; gap: 1rem; } }
   </style>
+  nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(24, 40, 72, 0.95);
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center; /* centers vertically */
+  gap: 2rem; /* space between links */
+  padding: 1rem 0;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+}
+
 </head>
 <body>
-body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center fixed;
@@ -271,5 +284,6 @@ body {
   </script>
 </body>
 </html>
+
 
 
